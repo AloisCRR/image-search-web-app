@@ -10,7 +10,9 @@ function App() {
     <div className="container">
       <div className="jumbotron">
         <h3 className="text-center mb-5">Image Search</h3>
-        <Search/>
+        <Search data={(data)=>{
+          console.log(data);
+        }}/>
       </div>
     </div>
   );

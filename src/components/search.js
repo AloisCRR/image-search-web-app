@@ -6,7 +6,7 @@ export default class search extends Component {
 
     passing_data= (e)=>{
         e.preventDefault();
-        console.log(this.get_data.current.value);
+        this.props.data(this.get_data.current.value);
     }
     
     render() {
