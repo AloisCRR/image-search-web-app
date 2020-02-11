@@ -1,0 +1,9 @@
+body {
+    background-image: url(./greek-vase.png);
+}
+
+@media (max-width: 768px) {
+    #searchButton {
+      margin-top: 15px;
+    }
+}
