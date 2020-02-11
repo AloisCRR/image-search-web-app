@@ -21,6 +21,9 @@ function App() {
       fetch(url)
         .then(ans => ans.json())
         .then(res => setImages(res.hits))
+      
+      const topView=document.querySelector('.jumbotron');
+      topView.scrollIntoView('auto','start');
     }
   }, [searchWord,page]);
 
