@@ -13,15 +13,16 @@ function App() {
 
   const [searchWord, setSearchWord] = useState(null);
   const [images, setImages] = useState([]);
+  const [page, setPage] = useState(null);
 
   useEffect(() => {
     if (searchWord !== null) {
-      const url = `https://pixabay.com/api/?key=15216018-e65acb1671acb3c799dd2acbc&q=${searchWord}`;
+      const url = `https://pixabay.com/api/?key=15216018-e65acb1671acb3c799dd2acbc&q=${searchWord}&page=${page}`;
       fetch(url)
         .then(ans => ans.json())
         .then(res => setImages(res.hits))
     }
-  }, [searchWord]);
+  }, [searchWord,page]);
 
   return (
     <div className="container">
@@ -29,9 +30,26 @@ function App() {
         <h3 className="text-center mb-5">Image Search</h3>
         <Search data={data => {
           setSearchWord(data);
+          setPage(1);
         }} />
       </div>
-      <Results imagesResults={images}/>
+      <Results
+        imagesResults={images}
+        previousPage={() => {
+          let pageNum = page;
+          if (pageNum > 1) {
+            pageNum-=1;
+            setPage(pageNum);
+          } else{
+            return null;
+          }
+        }}
+        nextPage={() => {
+          let pageNum = page;
+          pageNum+=1;
+          setPage(pageNum);
+        }}
+      />
     </div>
   );
 }
