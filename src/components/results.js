@@ -14,7 +14,7 @@ export default class results extends Component {
             <React.Fragment>
                 <div className="row">
                     {ImagesProp.map(image =>(
-                        <Image/>
+                        <Image image={image} key={image.id}/>
                     ))}
                 </div>
             </React.Fragment>
