@@ -16,8 +16,8 @@ export default class search extends Component {
                     <div className="col-md-8">
                         <input ref={this.get_data} type="text" className="form-control form-control-lg" placeholder="Search for an image. Example: Soccer..."/>
                     </div>
-                    <div className="col-md-4">
-                        <input type="submit" className="btn btn-primary btn-lg btn-block"/>
+                    <div className="col-md-4" id="searchButton">
+                        <input type="submit" className="btn btn-primary btn-lg btn-block" value="Search"/>
                     </div>
                 </div>
             </form>
