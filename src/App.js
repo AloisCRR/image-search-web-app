@@ -11,11 +11,14 @@ Pass: hola1234 */
 function App() {
 
   const [searchWord, setSearchWord] = useState(null);
+  const [images, setImages]=useState([]);
 
   useEffect(() => {
     if (searchWord !== null) {
     const url = `https://pixabay.com/api/?key=15216018-e65acb1671acb3c799dd2acbc&q=${searchWord}`;
-    console.log(url);
+    fetch(url)
+      .then(ans=>ans.json())
+      .then(res=>setImages(res.hits))
   }
 }, [searchWord]);
 
@@ -27,7 +30,6 @@ return (
         setSearchWord(data);
       }} />
     </div>
-    {searchWord}
   </div>
 );
 }
