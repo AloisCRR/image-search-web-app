@@ -1,10 +1,24 @@
 import React, { Component } from 'react'
 
+// Importing module
+import Image from './image';
+
 export default class results extends Component {
     
     showImages =()=>{
-        if (this.props.imagesResults.length===0) return null;
-        console.log(this.props.imagesResults);
+        const ImagesProp=this.props.imagesResults
+        if (ImagesProp.length===0) return null;
+        console.log(ImagesProp);
+
+        return(
+            <React.Fragment>
+                <div className="row">
+                    {ImagesProp.map(image =>(
+                        <Image/>
+                    ))}
+                </div>
+            </React.Fragment>
+        )
     }
     
     render() {
