@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 
 // Importing module
 import Image from './image';
+import Pagination from './pagination'
 
 export default class results extends Component {
     
     showImages =()=>{
         const ImagesProp=this.props.imagesResults
         if (ImagesProp.length===0) return null;
-        console.log(ImagesProp);
 
         return(
             <React.Fragment>
@@ -17,6 +17,7 @@ export default class results extends Component {
                         <Image image={image} key={image.id}/>
                     ))}
                 </div>
+                <Pagination/>
             </React.Fragment>
         )
     }
