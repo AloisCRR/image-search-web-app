@@ -1,8 +1,22 @@
 import React from 'react';
 
 const Image = (props) => {
-    return(
-        <h5>Image Component</h5>
+
+    const { downloads, likes, previewURL, userImageURL, tags, comments } = props.image;
+
+    return (
+        <div className="col-12 col-sm-6 col-md-3 col-lg-2 mb-3">
+            <div className="card">
+                <img src={previewURL} className="card-img-top" alt={tags} />
+                <div className="card-body">
+                    <ul className="list-group list-group-flush">
+                        <li className="list-group-item"><i className="fab fa-gratipay" style={{marginRight: 20 + 'px'}}></i>{likes}</li>
+                        <li className="list-group-item"><i className="fas fa-download" style={{marginRight: 20 + 'px'}}></i>{downloads}</li>
+                        <li className="list-group-item"><i className="fas fa-comments" style={{marginRight: 20 + 'px'}}></i>{comments}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     )
 }
 
