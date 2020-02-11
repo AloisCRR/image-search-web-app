@@ -12,7 +12,7 @@ export default class results extends Component {
 
         return (
             <React.Fragment>
-                <div className="row">
+                <div className="row align-items-end">
                     {ImagesProp.map(image => (
                         <Image image={image} key={image.id} />
                     ))}
