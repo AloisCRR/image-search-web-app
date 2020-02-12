@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="jumbotron mt-5">
+      <div className="jumbotron my-5">
         <h3 className="text-center mb-5">Image Search</h3>
         <Search data={data => {
           setSearchWord(data);
