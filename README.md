@@ -1,8 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Final project
 
-## Available Scripts
+<p align='center'>
+<img src='https://i.imgur.com/elm19zI.png' alt='final-project-image'>
+</p>
 
-In the project directory, you can run:
+## Technologies & API
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [React](https://reactjs.org/)
+- [Pixabay API](https://pixabay.com/api/docs/)
+
+## Most used scripts
+
+### `npm install`
+
+Once cloned repository o downloaded project, on project folder run `npm install` to install all dependecies
 
 ### `npm start`
 
@@ -12,36 +24,25 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
+## Goals
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- App functionality ✅
 
-### `npm run build`
+- Testing ❌
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - [Running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Deployment ❌
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - [Deployment react documentation](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run eject`
+- Hosting, domain, etc. ❌
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    - [DigitalOcean, Nginx, PM2, y SSL](https://www.youtube.com/watch?v=6qR_EpxadMo)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - [DigitalOcean, SSH, PM2 y nginx](https://www.youtube.com/watch?v=gmfUNDmJDuk)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Next steps
 
 ### Code Splitting
 
@@ -58,11 +59,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 ### Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
